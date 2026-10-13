@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Section */
+section {
+  background-color: transparent !important;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+/* Form container */
+.mx-auto.w-full.max-w-\[550px\] {
+  background: #ffffff !important;
+  border: 1px solid #ebdfff !important;
+  padding: 2.5rem !important;
+  border-radius: 1.5rem !important;
+  box-shadow: 0 15px 30px rgba(124, 58, 237, 0.08) !important;
+  color: #211545 !important;
+}
+
+/* Labels */
+form label, label, .block.text-base.font-medium {
+  color: #211545 !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form input[type="email"],
+form select,
+form textarea {
+  background-color: #fbfaff !important;
+  border: 1.5px solid #dcd6f7 !important;
+  color: #211545 !important;
+  border-radius: 0.75rem !important;
+  padding: 0.85rem 1.1rem !important;
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+form input:focus, form select:focus, form textarea:focus {
+  border-color: #7c3aed !important;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.15) !important;
+  outline: none !important;
+}
+form input::placeholder {
+  color: rgba(94, 79, 141, 0.45) !important;
+}
+
+/* Buttons */
+form button[type="submit"], form button.hover\:bg-white {
+  background-color: #7c3aed !important;
+  color: #ffffff !important;
+  border-radius: 0.75rem !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  border: none !important;
+  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.25) !important;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer !important;
+}
+form button[type="submit"]:hover, form button.hover\:bg-white:hover {
+  background-color: #6d28d9 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 10px 20px -3px rgba(124, 58, 237, 0.35) !important;
+}
+
+/* Tables */
+.max-w-full.overflow-x-auto {
+  background: #ffffff !important;
+  border: 1px solid #ebdfff !important;
+  border-radius: 1.5rem !important;
+  padding: 1.75rem !important;
+  box-shadow: 0 15px 30px rgba(124, 58, 237, 0.08) !important;
+}
+
+table {
+  border-collapse: collapse !important;
+}
+table th {
+  background-color: #f5f2ff !important;
+  color: #211545 !important;
+  font-weight: 700 !important;
+  border: none !important;
+  font-size: 1.1rem !important;
+  padding: 1.1rem 0.85rem !important;
+}
+table td {
+  background-color: transparent !important;
+  color: #2c2254 !important;
+  border-bottom: 1.5px solid rgba(124, 58, 237, 0.08) !important;
+  border-left: none !important;
+  border-right: none !important;
+  font-size: 1.05rem !important;
+  font-weight: 500 !important;
+  padding: 1.35rem 0.85rem !important;
+}
+table tr:last-child td {
+  border-bottom: none !important;
+}
+table tr:hover td {
+  background-color: rgba(124, 58, 237, 0.02) !important;
+}
+
+/* Navigation */
+.mobile-nav-menu {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-right: 1px solid #ebdfff !important;
+  box-shadow: 15px 0 45px rgba(33, 21, 69, 0.15) !important;
+}
+
+.sidebar-link, .mobile-link {
+  display: block !important;
+  padding: 0.85rem 1.5rem !important;
+  border-radius: 0.75rem !important;
+  color: rgba(33, 21, 69, 0.75) !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease-in-out !important;
+  border-left: 4px solid transparent !important;
+  text-align: left !important;
+}
+.sidebar-link:hover, .mobile-link:hover {
+  color: #7c3aed !important;
+  background-color: rgba(124, 58, 237, 0.05) !important;
+}
+.sidebar-link.active, .mobile-link.active {
+  color: #7c3aed !important;
+  background-color: rgba(124, 58, 237, 0.08) !important;
+  font-weight: 700 !important;
+  border-left-color: #7c3aed !important;
+}
+
+.logout-link {
+  display: block !important;
+  padding: 0.85rem 1.5rem !important;
+  border-radius: 0.75rem !important;
+  color: #e11d48 !important;
+  background-color: rgba(244, 63, 94, 0.05) !important;
+  border: 1.5px solid rgba(244, 63, 94, 0.15) !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s ease-in-out !important;
+  text-align: left !important;
+}
+.logout-link:hover {
+  color: #be123c !important;
+  background-color: rgba(244, 63, 94, 0.1) !important;
+}
+
+
